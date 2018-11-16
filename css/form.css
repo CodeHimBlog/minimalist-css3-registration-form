@@ -1,0 +1,118 @@
+/*  Code Snippet: Registration Form
+ *   Author: Asif Mughal
+ *   GitHub: https://github.com/CodeHimBlog
+ *   URL: https://www.codehim.com/2018/11/minimalist-css3-registration-form.html
+ *   License: MIT License
+ *   Copyright (c) 2018 - Codehim
+ */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #D38312;
+	/* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #A83279, #D38312);
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #A83279, #D38312);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* The CSS for HTML form element */
+.registration-form {
+	padding: 15px;
+	font-family: Arial, 'Sans Serif';
+	background: #fff;
+	margin: 20px;
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	font-size: 14px;
+}
+
+/* Styling the input fields of the form expect input type radio */
+select,
+.registration-form input:not(.agree) {
+	display: block;
+	padding: 15px;
+	margin: 10px 0;
+	width: 100%;
+	box-sizing: border-box;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	outline: 0;
+}
+
+/* Registration from sign up button design */
+.registration-form .submit-btn {
+	display: block;
+	width: 100%;
+	padding: 15px;
+	box-sizing: border-box;
+	font-size: 18px;
+	background: #e41b17;
+	border: 0;
+	border-radius: 15px;
+	color: #fff;
+	outline: 0;
+   cursor: pointer;
+}
+
+/* Change the color on hover when user hover the sign up button */
+.registration-form .submit-btn:hover {
+	background: #546e7a;
+}
+
+/* To smoothly change background color of submit button */
+.submit-btn,
+.submit-btn:hover {
+	transition: 0.4s;
+	-webkit-transition: 0.4s;
+	-moz-transition: 0.4s;
+}
+
+/*Sign up agreement line design */
+.agree-st {
+	margin: 20px 0;
+	font-size: 13px;
+	line-height: 1.3;
+	color: #555;
+}
+
+/* Anchor links in agreement line that point to privacy and terms page of the website */
+.agree-st a {
+	text-decoration: none;
+	color: #e41b17;
+}
+.agree-st a:hover{
+   text-decoration: underline;
+}
+
+/* Registration form for large screen I.e desktop and tabs */
+@media only screen and (min-width: 480px) {
+	.registration-form {
+		width: 320px;
+		height: auto;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.intro {
+	margin-top: 80px;
+	color: rgba(255, 255, 255, 0.8);
+	text-align: center;
+}
+
+.copyright {
+	font-size: 8pt;
+	color: rgba(255, 255, 255, 0.7);
+	text-align: right;
+	margin: 100px 10px;
+}
+
+.copyright a {
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.7);
+}
